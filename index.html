@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+	<title>Login</title>
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+	<!–– Creamos el titulo "login" ––>
+    <div class="center"> 
+      <h1>Login</h1>
+      <form method="post">
+        <div class="txt_field">
+        	<!–– En la parte de abajo creamos el input "usuario" con id "usua", es importante recordar el id porque es el que importaremos en el script ––>
+          <input id="usua" class="input100" type="text" name="username" placeholder="Usuario">
+        </div>
+        <div class="txt_field">
+        	<!–– En la parte de abajo creamos el input "Contraseña" con id "contra", es importante recordar el id porque es el que importaremos en el script ––>
+          <input id="contra" class="input100" type="password" name="pass" placeholder="Contraseña">
+        </div>
+        <div style="cursor: pointer;" onclick="form()" class="form-btn">
+		Login</div>
+		<!–– En la parte de abajo creamos el parrafo con id "vale", es importante recordar el id porque es el que importaremos en el script ––>
+        <p id="vale" class="txt1">
+
+		</p>
+      </form>
+    </div>
+    <!–– Aquí importamos el archivo script y el rollups(que nos servira para encriptar) ––>
+    <script src="script.js"></script>
+	<script src="rollups/aes.js"></script>
+
+  </body>
+</html>
